@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>社会人簿記1級 挑戦ログ | Study ASMR</title>
+  <title>【高卒・元ライン作業員】未経験から事務職転職＆簿記2級一発合格！「職場を修行場にする」勉強戦略 | Study ASMR</title>
   <style>
     :root {
       --primary: #1e3a8a;
@@ -14,6 +14,7 @@
       --text-sub: #64748b;
       --border: #e2e8f0;
       --yt-red: #cc0000;
+      --callout-bg: #eff6ff;
     }
     * {
       box-sizing: border-box;
@@ -24,373 +25,194 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.8;
       padding: 20px;
     }
     .container {
-      max-width: 860px;
+      max-width: 800px;
       margin: 0 auto;
     }
-    .header {
-      background: var(--card-bg);
-      padding: 30px 20px;
-      text-align: center;
-      border-radius: 12px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    .nav-bar {
       margin-bottom: 20px;
     }
-    h1 {
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
       color: var(--primary);
-      font-size: 1.6rem;
-      margin-bottom: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
     }
-    .header p {
-      font-size: 0.95rem;
-      color: var(--text-sub);
+    .back-link:hover {
+      text-decoration: underline;
     }
-    /* プロフィールカード */
-    .profile-card {
+    article {
       background: var(--card-bg);
-      padding: 24px;
+      padding: 35px 25px;
       border-radius: 12px;
-      margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       border: 1px solid var(--border);
     }
-    .profile-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 10px;
+    .article-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
     }
-    .profile-tag {
-      background: var(--primary);
+    .article-tag {
+      display: inline-block;
+      background: var(--accent);
       color: #ffffff;
       font-size: 0.75rem;
-      padding: 3px 8px;
-      border-radius: 4px;
       font-weight: bold;
-    }
-    .profile-title {
-      font-size: 1.15rem;
-      font-weight: bold;
-      color: var(--primary);
-    }
-    .profile-text {
-      font-size: 0.92rem;
-      color: var(--text);
-      margin-bottom: 12px;
-    }
-    .profile-history {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    .history-badge {
-      background: var(--bg);
-      font-size: 0.8rem;
-      color: var(--text-sub);
       padding: 4px 10px;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-    }
-    /* 略歴タイムライン */
-    .timeline-title {
-      font-size: 0.95rem;
-      font-weight: bold;
-      color: var(--primary);
+      border-radius: 4px;
       margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
     }
-    .timeline {
-      border-left: 2px solid var(--border);
-      margin-left: 10px;
-      padding-left: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .timeline-item {
-      position: relative;
-      font-size: 0.88rem;
-    }
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: -21px;
-      top: 6px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--primary);
-    }
-    .timeline-item.active::before {
-      background: var(--accent);
-      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
-    }
-    .timeline-date {
-      font-weight: 600;
-      color: var(--text-sub);
-      font-size: 0.8rem;
-      margin-right: 8px;
-      display: inline-block;
-      min-width: 90px;
-    }
-    .timeline-content {
-      color: var(--text);
-    }
-    .timeline-content strong {
-      color: var(--accent);
-    }
-    /* ステータスカード */
-    .status-card {
-      background: var(--card-bg);
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      border-left: 6px solid var(--accent);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .status-card h3 {
-      font-size: 1.1rem;
+    h1 {
+      font-size: 1.5rem;
+      line-height: 1.4;
       color: var(--primary);
+      margin-bottom: 15px;
+    }
+    .article-meta {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-top: 40px;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      border-left: 5px solid var(--accent);
+      line-height: 1.3;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-top: 25px;
       margin-bottom: 10px;
     }
-    .status-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      font-size: 0.9rem;
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 0.96rem;
     }
-    .status-item {
-      background: var(--bg);
-      padding: 8px 12px;
-      border-radius: 6px;
+    ul, ol {
+      margin-bottom: 1.2rem;
+      padding-left: 20px;
+      font-size: 0.95rem;
     }
-    .status-item strong {
-      color: var(--accent);
-      font-size: 1.05rem;
+    li {
+      margin-bottom: 6px;
     }
-    /* YouTubeカード */
-    .youtube-card {
-      background: linear-gradient(135deg, #e50914, var(--yt-red));
-      color: #ffffff;
-      padding: 24px;
-      border-radius: 12px;
+    .callout {
+      background-color: var(--callout-bg);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin: 25px 0 15px 0;
+      font-size: 0.94rem;
+    }
+    .callout-title {
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+    .article-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 15px 0 25px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+    }
+    .img-caption {
+      font-size: 0.82rem;
+      color: var(--text-sub);
       text-align: center;
+      margin-top: -15px;
       margin-bottom: 25px;
-      box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2);
     }
-    .youtube-card h3 {
-      font-size: 1.3rem;
+    .quote-box {
+      border-left: 3px solid var(--border);
+      padding-left: 15px;
+      color: var(--text-sub);
+      font-style: italic;
+      margin: 20px 0;
+    }
+    .youtube-promo {
+      background: #fafafa;
+      border: 1px dashed var(--yt-red);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 35px 0;
+    }
+    .youtube-promo h4 {
+      color: var(--yt-red);
       margin-bottom: 8px;
-    }
-    .youtube-card p {
-      font-size: 0.9rem;
-      opacity: 0.95;
-      margin-bottom: 16px;
     }
     .yt-btn {
       display: inline-block;
-      background-color: #ffffff;
-      color: var(--yt-red);
+      background-color: var(--yt-red);
+      color: #ffffff;
       font-weight: bold;
       text-decoration: none;
-      padding: 10px 24px;
-      border-radius: 30px;
-      font-size: 0.95rem;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-    .yt-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .section-title {
-      font-size: 1.25rem;
-      color: var(--primary);
-      margin-bottom: 15px;
-      padding-left: 8px;
-      border-left: 4px solid var(--primary);
-    }
-    .articles {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 15px;
-      margin-bottom: 30px;
-    }
-    .card {
-      background: var(--card-bg);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      border: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-    }
-    .tag {
-      font-size: 11px;
-      font-weight: bold;
-      color: var(--accent);
-      margin-bottom: 6px;
-      text-transform: uppercase;
-    }
-    .title {
-      font-size: 1rem;
-      font-weight: bold;
-      line-height: 1.4;
-      margin-bottom: 8px;
-    }
-    .title a:hover {
-      color: var(--accent) !important;
-    }
-    .desc {
+      padding: 8px 20px;
+      border-radius: 20px;
       font-size: 0.85rem;
-      color: var(--text-sub);
-      line-height: 1.5;
+      margin-top: 10px;
     }
     footer {
       text-align: center;
       font-size: 0.8rem;
       color: var(--text-sub);
-      padding-top: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-
-    <div class="header">
-      <h1>社会人簿記1級 挑戦ログ</h1>
-      <p>フルタイム勤務 × 簿記1級合格へのロードマップ & Study ASMR</p>
+    <div class="nav-bar">
+      <a href="index.html" class="back-link">← トップページに戻る</a>
     </div>
 
-    <!-- 自己紹介セクション -->
-    <section class="profile-card">
-      <div class="profile-header">
-        <span class="profile-tag">運営者情報</span>
-        <h2 class="profile-title">Study ASMR Studio / 運営者プロフィール</h2>
-      </div>
-      <p class="profile-text">
-        こんにちは！2002年生まれの社会人です。<br>
-        高校卒業後、工場でライン作業員として働いていましたが、「自分の力でキャリアを築きたい」という思いから未経験で事務職へ転職しました。
-      </p>
-      <p class="profile-text">
-        現在は実務をこなしながら、さらなるキャリアアップを見据えて日商簿記1級の取得を目指し奮闘中です。同じように働きながら挑戦している方へ届くよう、日々の勉強記録や手元ASMR動画を公開しています。
-      </p>
+    <article>
+      <header class="article-header">
+        <span class="article-tag">転職・勉強戦略</span>
+        <h1>【高卒・元ライン作業員】未経験から事務職へ転職！簿記2級＆建設業経理士2級を勝ち取った勉強戦略</h1>
+        <div class="article-meta">
+          <span>投稿日: 2026年11月</span> | <span>著者: Study ASMR Studio</span>
+        </div>
+      </header>
 
-      <div class="profile-history">
-        <span class="history-badge">2002年生まれ</span>
-        <span class="history-badge">高卒</span>
-        <span class="history-badge">元・製造ライン作業</span>
-        <span class="history-badge">転職1回（現・事務職）</span>
-        <span class="history-badge">簿記1級 挑戦中</span>
-      </div>
+      <p>こんにちは、Study ASMR Studio（2002年生まれ）です。</p>
+      <p>高校を卒業後、私は地元の工場で製造ラインの作業員として働いていました。毎日体力の限界まで動き回り、夜勤もこなす生活。そんな中で「このままで自分のキャリアは大丈夫なのだろうか」「自分の力で稼ぎ、市場価値を高めたい」と強く危機感を抱くようになりました。</p>
+      <p>そこから一念発起し、<strong>完全未経験から事務職への転職を果たし、転職後わずか半年で日商簿記2級、さらに建設業経理士2級まで一発合格</strong>を果たすことができました。現在はその勢いのまま、最難関である「日商簿記1級（2027年6月目標）」に挑戦しています。</p>
+      <p>今回は、凡人・高卒の私がどのようにして工場から脱出し、働きながら資格を掴み取っていったのか、そのリアルな戦略と勉強ルーティンをお伝えします。</p>
 
-      <!-- 略歴タイムライン -->
-      <div class="timeline-title">略歴・資格取得ログ</div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="timeline-date">2020年04月</span>
-          <span class="timeline-content">高校を卒業後、製造業へ就職（ライン作業）</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2025年02月</span>
-          <span class="timeline-content">日商簿記3級 取得</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2025年06月</span>
-          <span class="timeline-content">事務職へのキャリアアップを見据え、転職活動開始</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2025年11月</span>
-          <span class="timeline-content">Microsoft Word (Office 2019) 取得</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2025年12月</span>
-          <span class="timeline-content">Microsoft Excel Expert (Office 2019) 取得</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2026年07月</span>
-          <span class="timeline-content">日商簿記2級 取得</span>
-        </div>
-        <div class="timeline-item active">
-          <span class="timeline-date">2026年07月〜</span>
-          <span class="timeline-content"><strong>日商簿記1級 挑戦開始（現在挑戦中）</strong></span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2026年11月</span>
-          <span class="timeline-content">建設業経理士2級 取得</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 学習ステータス -->
-    <div class="status-card">
-      <h3>現在の学習ステータス</h3>
-      <div class="status-grid">
-        <div class="status-item">目標：<strong>2027年6月 第170回 日商簿記1級</strong></div>
-        <div class="status-item">総学習時間：<strong>0 / 800 時間</strong></div>
-      </div>
-    </div>
-
-    <!-- YouTube連携 -->
-    <div class="youtube-card">
-      <h3>YouTube「Study ASMR Studio」</h3>
-      <p>手元の電卓操作音、紙とペンの筆記音、作業用タイムラプス動画を配信しています。</p>
-      <a href="https://www.youtube.com/@StudyASMRStudio" target="_blank" rel="noopener noreferrer" class="yt-btn">
-        YouTubeチャンネルを見る →
-      </a>
-    </div>
-
-    <h2 class="section-title">最新記事・おすすめツール</h2>
-    <div class="articles">
-
-      <!-- 記事1（リンク設定済み） -->
-      <div class="card">
-        <span class="tag">転職・勉強戦略</span>
-        <div class="title">
-          <a href="article-01.html" style="color: inherit; text-decoration: none;">
-            【高卒・元ライン作業員】未経験から事務職転職＆簿記2級一発合格の勉強戦略
-          </a>
-        </div>
-        <div class="desc">
-          工場を脱出し、職場の机を「修行場」に変えて短期間で資格を掴み取ったリアルなルーティン。
-        </div>
-        <div style="margin-top: auto; padding-top: 10px;">
-          <a href="article-01.html" style="color: var(--primary); font-weight: bold; font-size: 0.85rem; text-decoration: none;">
-            記事を読む →
-          </a>
-        </div>
+      <h2>1. 逆転の転職戦略：「2級を取ってから」ではなく「勉強時間を買うために」転職した</h2>
+      <p>当初の計画では、「工場で働きながら簿記2級まで取ってから、堂々と転職活動をしよう」と考えていました。しかし、現実は甘くありませんでした。</p>
+      
+      <div class="callout">
+        <div class="callout-title">ぶつかった現実</div>
+        工場勤務は常に体を酷使します。帰宅すると完全に力尽き、倒れるように寝てしまう毎日。さらに夜勤もある不規則なシフトの中で、簿記2級の膨大な学習量をこなすのは、自分の体力・スペックでは不可能に近いと感じました。
       </div>
 
-      <!-- 記事2 -->
-      <div class="card">
-        <span class="tag">道具・文房具</span>
-        <div class="title">簿記1級で本当に叩きやすい電卓3選</div>
-        <div class="desc">打鍵音・早打ち対応・静音性で選んだ愛用電卓のレビュー。</div>
-      </div>
+      <!-- 画像挿入箇所 -->
+      <img src="exhausted-study.png" alt="工場勤務後の夜、疲労で勉強机から目を背ける様子" class="article-img">
+      <div class="img-caption">写真：工場での重労働の後、自宅アパートで教材を前に体力の限界を感じていた当時</div>
 
-      <!-- 記事3 -->
-      <div class="card">
-        <span class="tag">教材</span>
-        <div class="title">独学か通信講座か？費用の比較</div>
-        <div class="desc">主要スクールの費用とサポート体制を徹底比較。</div>
-      </div>
+      <p>そこで発想を180度変えました。<br>
+      <strong>「2級を取ってから転職するのではなく、勉強時間を確保できる職場へ先に転職してしまおう」</strong>と決断したのです。</p>
+      <p>転職先は、多少年収が下がったとしても「定時で帰れるか」「肉体的な消耗が少なく、勉強時間を安定して確保できるか」を最優先基準に設定しました。面接では20代前半という若さを活かし、小手先のスキルではなく<strong>「挑戦心」「未経験でも食らいつくやる気」</strong>を泥臭く熱意としてぶつけ、無事に事務職への切符を掴み取りました。</p>
+      <p>正直なところ、現在の職場はいわば<strong>「さらなるキャリアアップに向け、自分の価値を高めるための修行場」</strong>と割り切って日々励んでいます。</p>
 
-    </div>
+      <h2>2. 合格を引き寄せた教材と学習ルーティン</h2>
+      <h3>インプット：クレアール（3・2級パック）</h3>
+      <p>最初から2級取得を見据えていたため、インプット教材には<strong>「クレアール」の3・2級パック</strong>を選択しました。講義動画で基礎理論や仕訳のロジックを徹底的に頭に入れました。ただし、クレアールの問題集は全体像を掴むために1周したのみで、すぐに実践演習へと舵を切りました。</p>
 
-    <footer>
-      <p>&copy; 2026 社会人簿記1級 挑戦ログ. All Rights Reserved.</p>
-    </footer>
-
-  </div>
-
-</body>
-</html>
+      <h3>アウトプット：『みんなが欲しかった！簿記の過去問題集・模試集』を最低3周</h3>
+      <p>合格を決定づけたのは市販の模試演習です。TACの「みんなが欲しかった！」シリーズの模試集を本番環境と同じ時間制限で<strong>最低3周</strong>やり込みました。</p

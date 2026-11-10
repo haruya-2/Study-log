@@ -23,26 +23,26 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.8;
+      line-height: 1.85;
       padding: 20px;
     }
     .container {
       max-width: 780px;
       margin: 0 auto;
       background: var(--card-bg);
-      padding: 32px;
+      padding: 36px 32px;
       border-radius: 12px;
       border: 1px solid var(--border);
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
     .nav-back {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
     .nav-back a {
       color: var(--primary);
       text-decoration: none;
       font-size: 0.9rem;
-      font-weight: 500;
+      font-weight: 600;
     }
     .pr-notice {
       font-size: 0.75rem;
@@ -54,67 +54,89 @@
       margin-bottom: 16px;
     }
     h1 {
-      font-size: 1.6rem;
-      line-height: 1.4;
+      font-size: 1.65rem;
+      line-height: 1.45;
       margin-bottom: 12px;
       color: #0f172a;
     }
     .meta-info {
       font-size: 0.85rem;
       color: var(--text-muted);
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       padding-bottom: 16px;
       border-bottom: 1px solid var(--border);
     }
     h2 {
       font-size: 1.3rem;
-      margin: 36px 0 16px;
+      margin: 40px 0 16px;
       padding-left: 12px;
       border-left: 4px solid var(--primary);
       color: #0f172a;
     }
+    h3 {
+      font-size: 1.1rem;
+      margin: 24px 0 12px;
+      color: #1e293b;
+    }
     p {
       margin-bottom: 18px;
     }
-    .point-box {
+    ul, ol {
+      margin: 0 0 20px 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .callout {
       background: #eff6ff;
       border: 1px solid #bfdbfe;
       border-radius: 8px;
-      padding: 16px 20px;
-      margin: 20px 0;
+      padding: 20px;
+      margin: 24px 0;
     }
-    .point-box ul {
-      margin-left: 20px;
-      margin-top: 8px;
+    .callout strong {
+      color: #1e40af;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+    .spec-table th, .spec-table td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: left;
+    }
+    .spec-table th {
+      background: #f8fafc;
+      width: 30%;
+      color: #475569;
     }
     /* アフィリエイト商品カード */
-    .affiliate-card {
-      background: #ffffff;
-      border: 2px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 28px 0;
+    .affiliate-wrapper {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 24px;
+      margin: 32px 0;
+      text-align: center;
+    }
+    .affiliate-title {
+      font-weight: bold;
+      color: #0f172a;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    .affiliate-table-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-    @media (min-width: 640px) {
-      .affiliate-card {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-    }
-    .affiliate-table {
-      border: none !important;
-      width: 100% !important;
+      justify-content: center;
     }
     .footer-note {
-      margin-top: 40px;
-      padding-top: 20px;
+      margin-top: 48px;
+      padding-top: 24px;
       border-top: 1px solid var(--border);
       text-align: center;
-      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -130,4 +152,115 @@
   <h1>【愛用レビュー】簿記1級の相棒！打鍵感と静音性で選んだ実務電卓「CASIO JF-120GT-N」</h1>
   <div class="meta-info">投稿日：2026年11月10日 | カテゴリ：愛用ギア・道具紹介</div>
 
-  <p>製造業のライン工から未経験で事務職へ転職し、簿記3級
+  <p>元製造業のライン工から未経験で事務職へ転職し、簿記3級・2級、建設業経理士2級を取得。現在は日商簿記1級の合格を目指して勉強しています。</p>
+
+  <p>簿記の学習を進める上で、テキスト選びと同じくらい合否を左右するのが<strong>「電卓」</strong>です。特に日商簿記1級の商業簿記・会計学や工業簿記・原価計算では計算量が膨大になり、試験時間中に何百回とキーを叩くことになります。</p>
+
+  <p>今回は、残業後の居残り勉強やYouTubeの「Study ASMR」動画でも毎日使い倒している愛用電卓、<strong>「CASIO JF-120GT-N」</strong>を徹底レビューします。</p>
+
+  <h2>なぜ100円ショップや普通の電卓ではダメなのか？</h2>
+  <p>簿記の勉強を始めた当初、私は「数字が打てれば何でも同じだろう」と考えていました。しかし、日商簿記2級の問題演習に入ったあたりで壁にぶつかりました。</p>
+
+  <div class="callout">
+    <strong>普通の電卓で困った3つの問題</strong>
+    <ul>
+      <li><strong>早打ちに反応しない：</strong> 数字を素早く入力すると、キーの反応が追いつかず桁抜けが発生する</li>
+      <li><strong>キーのグラつきと打ち間違い：</strong> キーが小さく、指先が引っかかって別の数字を押してしまう</li>
+      <li><strong>打鍵音がうるさい：</strong> カチャカチャと高いプラスチック音が響き、オフィスや自習室で気まずい</li>
+    </ul>
+  </div>
+
+  <p>電卓の打ち間違いによる手戻りは、1回につき数十秒のロスになります。これが本試験のタイムオーバーや不合格に直結すると痛感し、実務や検定に耐えうる本格的な電卓を探して行き着いたのがこのモデルでした。</p>
+
+  <h2>愛用電卓「CASIO JF-120GT-N」の基本スペック</h2>
+  <p>簿記検定で必須とされる条件（12桁、日数・時間計算、早打ち対応、税計算機能）を完全に網羅しています。</p>
+
+  <table class="spec-table">
+    <tr>
+      <th>メーカー / 型番</th>
+      <td>カシオ計算機（CASIO）/ JF-120GT-N</td>
+    </tr>
+    <tr>
+      <th>桁数</th>
+      <td>12桁（大きな金額の計算も対応可能）</td>
+    </tr>
+    <tr>
+      <th>キーロールオーバー</th>
+      <td>対応（2キー早打ち機能）</td>
+    </tr>
+    <tr>
+      <th>タイプ</th>
+      <td>ジャストタイプ（机上で安定しつつ持ち運びも可能）</td>
+    </tr>
+    <tr>
+      <th>液晶表示</th>
+      <td>チルト（画面の角度調整が可能）</td>
+    </tr>
+  </table>
+
+  <h2>実際に1年以上使って感じた4つのメリット</h2>
+
+  <h3>1. YouTubeのASMR動画でも活きる「心地よい静音性と打鍵感」</h3>
+  <p>私が運営しているYouTubeチャンネル「Study ASMR Studio」の動画でも、この電卓を叩く音をそのままマイクで拾っています。</p>
+  <p>安価な電卓のような耳障りな甲高い音が出ず、キーの底打ち感が滑らかで「スコスコ」と低く心地よい音が響きます。夜間の職場で居残り勉強をするときも周囲の視線を気にせず集中できます。</p>
+
+  <h3>2. 手が疲れにくい絶妙なストローク</h3>
+  <p>キーに適度な沈み込みと反発力があり、指の形に沿った窪み（凹面キー構造）が施されています。工業簿記の総合原価計算や、何回も按分計算を繰り返す長時間の演習でも、指先や手首にかかる負担が圧倒的に軽くなりました。</p>
+
+  <h3>3. 画面が見やすいチルト（角度調節）ディスプレイ</h3>
+  <p>オフィスの蛍光灯の反射や、机と椅子の高さによって液晶が見づらい場面でも、ディスプレイの角度を手動で起こして見やすい位置に固定できます。視線のブレを防ぎ、数字の読み間違いを防げます。</p>
+
+  <h3>4. 実務電卓の中ではトップクラスのコスパ</h3>
+  <p>簿記専用の本格的な実務電卓は、上位モデルになると1万円以上するものも珍しくありません。しかしJF-120GT-Nは、検定に必要な機能と耐久性を備えながら手頃な価格帯に収まっており、最初の本格的な1台として非の打ち所がありません。</p>
+
+  <h2>気になった点（デメリット）</h2>
+  <p>全体として大満足していますが、購入前に知っておくべき点もあります。</p>
+  <ul>
+    <li><strong>持ち運びに特化したコンパクト型ではない：</strong> しっかりした机上用（ジャストサイズ）のため、ペンケースには入りません。普段はカバンのポケットやクッションケースに入れて持ち運んでいます。</li>
+    <li><strong>シャープ製とはキー配列が異なる：</strong> カシオ特有の配列（「0」キーの位置やクリアキーの配置）になっています。以前からシャープ配列に慣れている人は指の感覚を合わせる時間が必要です。</li>
+  </ul>
+
+  <h2>商品リンク</h2>
+  <p>日商簿記2級〜1級の本格的な勉強を始める方や、電卓の買い替えを考えている方はぜひ一度チェックしてみてください。</p>
+
+  <!-- A8.net 楽天商品リンク -->
+  <div class="affiliate-wrapper">
+    <div class="affiliate-title">▼ 今回紹介した愛用実務電卓</div>
+    <div class="affiliate-table-container">
+      <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:100%; max-width:420px; background:#fff; border-radius:6px; overflow:hidden;">
+        <tbody>
+          <tr style="border-style:none;">
+            <td style="vertical-align:top; border-style:none; padding:12px; width:64px;">
+              <a href="https://rpx.a8.net/svt/ejp?a8mat=3Z900H+CYRV1U+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00qct74.2bo114d8.g00qct74.2bo12477%2Fa24060557905_3Z900H_CYRV1U_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fedenki%252Fds-2479850%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fedenki%252Fi%252F21440663%252F%26rafcid%3Dwsc_i_is_a9f492a7-8ef9-40e2-ab89-4bc43a1ee283" rel="nofollow">
+                <img style="max-width: initial;" border="0" alt="CASIO JF-120GT-N" src="https://thumbnail.image.rakuten.co.jp/@0_mall/edenki/cabinet/dsproducts/651/0002479850-1.jpg?_ex=64x64">
+              </a>
+            </td>
+            <td style="font-size:13px; vertical-align:middle; border-style:none; padding:12px; text-align:left;">
+              <p style="padding:0; margin:0; line-height: 1.4;">
+                <a href="https://rpx.a8.net/svt/ejp?a8mat=3Z900H+CYRV1U+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00qct74.2bo114d8.g00qct74.2bo12477%2Fa24060557905_3Z900H_CYRV1U_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fedenki%252Fds-2479850%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fedenki%252Fi%252F21440663%252F%26rafcid%3Dwsc_i_is_a9f492a7-8ef9-40e2-ab89-4bc43a1ee283" rel="nofollow" style="color: #2563eb; font-weight: bold; text-decoration: none;">
+                  カシオ計算機 CASIO グリーン購入法適合電卓 ジャストタイプ12桁 JF-120GT-N
+                </a>
+              </p>
+              <p style="color:#64748b; margin-top:8px; font-size:11px;">
+                楽天市場で価格・在庫状況を見る →
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- A8トラッキングタグ -->
+    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3Z900H+CYRV1U+2HOM+BWGDT" alt="">
+  </div>
+
+  <h2>まとめ：毎日触る道具への投資が一番の時短</h2>
+  <p>簿記1級の合格には500時間以上の学習が必要と言われます。それだけの膨大な時間、常に自分の手元で動いてくれる道具だからこそ、信頼できる電卓を早い段階で揃えておく価値があります。</p>
+  <p>実際の打鍵音や叩くリズムはYouTubeの動画（Study ASMR）でも随時公開していますので、動画の音も参考にしてみてください。</p>
+
+  <div class="footer-note">
+    <a href="index.html" style="color: var(--primary); text-decoration: none; font-weight: bold;">← ブログトップに戻る</a>
+  </div>
+</div>
+
+</body>
+</html>

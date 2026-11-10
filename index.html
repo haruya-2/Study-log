@@ -24,7 +24,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
       padding: 20px;
     }
     .container {
@@ -48,6 +48,56 @@
       font-size: 0.95rem;
       color: var(--text-sub);
     }
+    /* プロフィールカード */
+    .profile-card {
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+    }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+    .profile-tag {
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .profile-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .profile-text {
+      font-size: 0.92rem;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .profile-history {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .history-badge {
+      background: var(--bg);
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+    }
+    /* ステータスカード */
     .status-card {
       background: var(--card-bg);
       padding: 20px;
@@ -76,6 +126,7 @@
       color: var(--accent);
       font-size: 1.05rem;
     }
+    /* YouTubeカード */
     .youtube-card {
       background: linear-gradient(135deg, #e50914, var(--yt-red));
       color: #ffffff;
@@ -166,6 +217,29 @@
       <p>フルタイム勤務 × 簿記1級合格へのロードマップ & Study ASMR</p>
     </div>
 
+    <!-- 自己紹介セクション -->
+    <section class="profile-card">
+      <div class="profile-header">
+        <span class="profile-tag">運営者情報</span>
+        <h2 class="profile-title">Study ASMR Studio / 運営者プロフィール</h2>
+      </div>
+      <p class="profile-text">
+        こんにちは！2002年生まれの社会人です。<br>
+        高校卒業後、工場でライン作業員として働いていましたが、「自分の力でキャリアを築きたい」という思いから未経験で事務職へ転職しました。
+      </p>
+      <p class="profile-text">
+        現在は実務をこなしながら、さらなるキャリアアップを見据えて日商簿記1級の取得を目指し奮闘中です。同じように働きながら挑戦している方へ届くよう、日々の勉強記録や手元ASMR動画を公開しています。
+      </p>
+      <div class="profile-history">
+        <span class="history-badge">2002年生まれ</span>
+        <span class="history-badge">高卒</span>
+        <span class="history-badge">元・製造ライン作業</span>
+        <span class="history-badge">転職1回（現・事務職）</span>
+        <span class="history-badge">簿記1級 挑戦中</span>
+      </div>
+    </section>
+
+    <!-- 学習ステータス -->
     <div class="status-card">
       <h3>現在の学習ステータス</h3>
       <div class="status-grid">
@@ -174,7 +248,7 @@
       </div>
     </div>
 
-    <!-- YouTube連携エリア（リンク反映済み） -->
+    <!-- YouTube連携 -->
     <div class="youtube-card">
       <h3>YouTube「Study ASMR Studio」</h3>
       <p>手元の電卓操作音、紙とペンの筆記音、作業用タイムラプス動画を配信しています。</p>

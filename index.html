@@ -88,6 +88,7 @@
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 10px;
+      margin-bottom: 20px;
     }
     .history-badge {
       background: var(--bg);
@@ -96,6 +97,56 @@
       padding: 4px 10px;
       border-radius: 20px;
       border: 1px solid var(--border);
+    }
+    /* 略歴タイムライン */
+    .timeline-title {
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .timeline {
+      border-left: 2px solid var(--border);
+      margin-left: 10px;
+      padding-left: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .timeline-item {
+      position: relative;
+      font-size: 0.88rem;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -21px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+    .timeline-item.active::before {
+      background: var(--accent);
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+    }
+    .timeline-date {
+      font-weight: 600;
+      color: var(--text-sub);
+      font-size: 0.8rem;
+      margin-right: 8px;
+      display: inline-block;
+      min-width: 90px;
+    }
+    .timeline-content {
+      color: var(--text);
+    }
+    .timeline-content strong {
+      color: var(--accent);
     }
     /* ステータスカード */
     .status-card {
@@ -230,12 +281,50 @@
       <p class="profile-text">
         現在は実務をこなしながら、さらなるキャリアアップを見据えて日商簿記1級の取得を目指し奮闘中です。同じように働きながら挑戦している方へ届くよう、日々の勉強記録や手元ASMR動画を公開しています。
       </p>
+
       <div class="profile-history">
         <span class="history-badge">2002年生まれ</span>
         <span class="history-badge">高卒</span>
         <span class="history-badge">元・製造ライン作業</span>
         <span class="history-badge">転職1回（現・事務職）</span>
         <span class="history-badge">簿記1級 挑戦中</span>
+      </div>
+
+      <!-- 略歴タイムライン -->
+      <div class="timeline-title">略歴・資格取得ログ</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2020年04月</span>
+          <span class="timeline-content">高校を卒業後、製造業へ就職（ライン作業）</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2025年02月</span>
+          <span class="timeline-content">日商簿記3級 取得</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2025年06月</span>
+          <span class="timeline-content">事務職へのキャリアアップを見据え、転職活動開始</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2025年11月</span>
+          <span class="timeline-content">Microsoft Word (Office 2019) 取得</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2025年12月</span>
+          <span class="timeline-content">Microsoft Excel Expert (Office 2019) 取得</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2026年07月</span>
+          <span class="timeline-content">日商簿記2級 取得</span>
+        </div>
+        <div class="timeline-item active">
+          <span class="timeline-date">2026年07月〜</span>
+          <span class="timeline-content"><strong>日商簿記1級 挑戦開始（現在挑戦中）</strong></span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2026年11月</span>
+          <span class="timeline-content">建設業経理士2級 取得</span>
+        </div>
       </div>
     </section>
 
